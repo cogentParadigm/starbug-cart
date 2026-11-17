@@ -26,7 +26,7 @@
     "starbug/price-formatter": "^0.9.1",
     "starbug/products": "^0.9",
     "starbug/routing": "^1.0",
-    "starbug/shipping-methods": "^0.10"
+    "starbug/shipping-methods": "^0.10 || ^0.11"
   },
   "autoload": {
     "psr-4": {
