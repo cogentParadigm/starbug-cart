@@ -1,0 +1,5 @@
+---
+config:
+  packages:
+    - name: cart
+      location: ../../modules/cart/public/js

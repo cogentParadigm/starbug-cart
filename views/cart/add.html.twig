@@ -1,0 +1,17 @@
+{% if route.getOption("format") == "xhr" %}
+<div class="pa4">
+{% endif %}
+{% if product is empty %}
+  <div class="alert alert-danger">An unknown error ocurred</div>
+{% else %}
+  <div class="alert alert-success">The following item has been added to your cart</div>
+  <p>{{ product.description }}</p>
+  <div>
+    <a class="btn btn-brand-yellow-alt" href="{{ helper("url").build("checkout") }}">Checkout now</a>
+    <a class="btn btn-default" href="{{ helper("url").build("") }}">Continue shopping</a>
+    <a class="btn btn-default" href="{{ helper("url").build("cart") }}">View cart</a>
+  </div>
+{% endif %}
+{% if route.getOption("format") == "xhr" %}
+</div>
+{% endif %}

@@ -1,0 +1,10 @@
+<div {{ helper("filter").attributes(display.attributes) }}>
+  <div class="flex items-center mb3">
+    <label class="brand-gray w-auto nowrap mr2">Quantity:</label>
+    <div class="">
+      {{ display.cells.qty }}
+    </div>
+    <label class="brand-gray w-auto nowrap mr2 ml-auto">Total:</label>
+    {{ display.cells.total }}
+  </div>
+</div>
